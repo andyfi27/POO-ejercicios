@@ -24,7 +24,7 @@ using namespace std;
 	  int main(){
 	  	Punto punto1;   //se creo objeto1
 
-                      ESTA LLAMANDO A X FUERA DE LA CLASE 
+                                   ESTA LLAMANDO A X FUERA DE LA CLASE 
 	  	punto1.x=15;  //saldra error, porque este X no se puede llamar desde la funcion main porque 
 	  	             //esta encapsulado en private, solo puede ser llamada esa x dentro de la clase 
 		
