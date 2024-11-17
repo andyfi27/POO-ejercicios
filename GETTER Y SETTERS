@@ -9,9 +9,9 @@
 using namespace std;
 
     class Punto{
-    	private:
+    	private:      ATRIBUTOS
     		int x,y;
-    	public:
+    	public:           METODO
     		punto();
 	};
 	  
