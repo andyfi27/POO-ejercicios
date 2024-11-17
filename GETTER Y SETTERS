@@ -1,0 +1,34 @@
+
+
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>  // Para la operación de potencia
+
+using namespace std;
+
+    class Punto{
+    	private:
+    		int x,y;
+    	public:
+    		punto();
+	};
+	  
+	  Punto::Punto{  //constructor
+
+	  }
+	  
+	  
+	NOS ENFOCAMOS EN EL MAIN 
+	  int main(){
+	  	Punto punto1;   //se creo objeto1
+
+                      ESTA LLAMANDO A X FUERA DE LA CLASE 
+	  	punto1.x=15;  //saldra error, porque este X no se puede llamar desde la funcion main porque 
+	  	             //esta encapsulado en private, solo puede ser llamada esa x dentro de la clase 
+		
+		system("pause");
+		return 0;
+	
+		  }
