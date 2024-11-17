@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include <ctype.h>
+#include <stdlib.h>
+#include <string.h>
+#include <math.h>  // Para la operación de potencia
+
+using namespace std;
+
+class Rectangulo{
+	private:
+		int base;
+		int altura;
+		
+	public:
+		Rectangulo (int,int); //modo constructor
+		void area();
+		void perimetro();
+		
+};
+//inicializa el constructor 
+      Rectangulo::Rectangulo(int _base, int _altura){
+      	base= _base;
+      	altura= _altura;
+	  }
+	  
+	  void Rectangulo::area(){
+	  	int x;
+	    x=base*altura;
+	    cout<<"Soy rectangulo y mi base mide: "<<base<< "y mi altura: " <<altura<<endl;
+	    cout<<"y mi area es: "<<x<<endl;
+	    
+	  }
+	  
+	  void Rectangulo::perimetro(){
+	  	int=x;
+	  	x=2*(base+altura);
+	  	cout<<"Soy un rectangulo y mi base mide: "<<base<<" ,mi atura mide. "<<altura<<endl;
+	  	cout<<"mi perimetro mide: "<<x<<endl;
+	  }
+	  
+	  int main(){
+	  	Rectangulo objeto1=Rectangulo(40,20);
+	  	Rectangulo objeto2(15,28);
+	  	
+	  	objeto1.area();
+	  	objeto1.perimetro();
+	  	objeto2.area();
+		objeto.2perimetro();	
+		
+		system("pause");
+		return 0;
+		
+		
+		  }
