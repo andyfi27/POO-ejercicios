@@ -1,34 +1,88 @@
-
+SET= ESTABLECE
+GET=MUESTRA
 
 
 #include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <math.h>  // Para la operación de potencia
+#include <math.h>
 
 using namespace std;
 
-    class Punto{
-    	private:      ATRIBUTOS
-    		int x,y;
-    	public:           METODO
-    		punto();
-	};
-	  
-	  Punto::Punto{  //constructor
 
-	  }
-	  
-	  
-	NOS ENFOCAMOS EN EL MAIN 
-	  int main(){
-	  	Punto punto1;   //se creo objeto1
-
-                                   ESTA LLAMANDO A X FUERA DE LA CLASE 
-	  	punto1.x=15;  //saldra error, porque este X no se puede llamar desde la funcion main porque 
-	  	             //esta encapsulado en private, solo puede ser llamada esa x dentro de la clase 
+class Punto{
+	private:
+	    int	x,y;
+	    
+	public: //metodos
+       Punto(); //constructor por defecto
 		
-		system("pause");
-		return 0;
 	
-		  }
+};
+
+   Punto::Punto(){   //constructor 
+   }
+   
+   
+   int main(){
+   	Punto punto1;  //creamos nuestro objeto uno de tipo punto
+   	
+   	punto1.x=15;  //quiero acceder a x, sin embargo por el ENCAPSULAMIENTO marca erro en la linea
+   	//porque X es de tipo private, por lo que esta encapsulado 
+   	
+   	//sin embargo hay una forma de acceder a su atributo privado, por medio de SETTERS
+   	system("pause");
+	   return o;
+   }
+---------------------------------------------------------------------------------------------------------------------------------   
+ #include <stdio.h>
+#include <math.h>
+
+using namespace std;
+
+
+class Punto{
+	private:
+	    int	x,y;
+	    
+	public:       //metodos
+       Punto();        //constructor por defecto
+
+       //este SET va ESTABLECER o DAR valores a nuestros atributos 
+       void setPunto(int, int);
+
+         //get es MOSTRAR  toda la info
+         int getPuntoX();
+         int getPuntoY();
+       
+		
+	
+};
+
+   Punto::Punto(){   //constructor 
+   }
+    void Punto::setPunto(int _x,int _y) {
+    	x=_x
+    	y=_y
+	}
+	
+	int Punto::getPunto(){
+		return x;
+		
+	}
+	
+	
+        int Punto::getPuntoY(){
+	         return y;
+}
+   }   
+   int main(){
+   	Punto punto1;  
+   	
+   	punto1.setPunto(15,13);
+   	cout<<punto1.getPuntoX()<<endl;
+   	cout<<punto1.getPuntoY()<<endl;
+   	
+   	
+   	
+   	system("pause");
+	   return o;
+   }
