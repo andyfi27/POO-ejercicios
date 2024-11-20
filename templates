@@ -1,0 +1,25 @@
+TAMPLES = PLANTILLAS DE FUNCIONES 
+(NOS PERMITEN ----GENERALIZA FUNCIONES------se pasa por parametro)
+EJEMPLO, CUNADO DECLARAS UN NUMERO-> DE TIPO, ENTERO, FLOAT, INT, LO QUE HACE ES QUE HACE GLOBALES A TODOS LOS TIPOS =TIPOD(TIPO DE DATO)
+
+SE DECLARA 
+template <class TIPOD> TIPOD= esta variable engloba diferentes tipos de datos----
+void mostrar(TIPOD numero);
+             int 
+             float
+             ....
+
+1.se pasa por PARAMETRO el tipo de dato
+2.en tiempo de ejecucuiom se crean las clases con el tipo de dato requerido
+3.los parametros en el TEMPLATE se conocen como ->GENERICOS 
+PARAMETROS->GENERICOS 
+
+
+EJEMPLO... 
+sacar el valor absoluto de un numero, pero que tipo de dato ponemos?
+
+void mostrarAbs(int numero);
+void mostrarAbs(float numero);
+void mostrarAbs(double numero);
+
+
